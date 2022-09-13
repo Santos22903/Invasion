@@ -1,0 +1,16 @@
+L          = 15 # linear dimension of square lattice
+L_filled   = 15 # filled part at center of lattice
+diff_range = 6  # diffusion range (6 nodes most common number in Archetti 2014/1 figure 2)
+dParam     = 3  # interplay w diff_range changes gradient shape
+zParam     = 10 # steepness of grad, z=10 (Archetti, fig 2) -> linear gradient
+cost       = 0.0# cost of producing benefits; initial=0.1 taken as mid of fig 2 range
+useCost    = True # whether to account for cost of PG production
+inflection = 0.5# for logistic benef f'n, value from Archetti for sigmoid benefits (Fig 1b,1c)
+steepness  = 20 # for logistic benef f'n, value from Archetti for sigmoid benefits (Fig 1b,1c)
+update_type= "deterministic" # deterministic or stochastic
+findContrib= "direct"          # "wrap" or "direct"
+n_cycles   = 100000 # number of cycles for each run
+#n_cycles   = 1 # debugging
+invasion_done_perc = 0.5 # fraction of invaders to have invasion succeed
+n_runs     = 100    # number of runs, starting with initialization, etc
+#n_runs     = 1    # debugging

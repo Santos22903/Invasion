@@ -1,0 +1,36 @@
+def plotGFs(xy_df):
+    """
+    plotting x&y of diffusing growth factors - separate line for different steps
+    input: data frame with columns "x" - "y" - "step#"
+    """
+    plt.rc('ytick',  labelsize=6)
+    plt.rc('axes',   labelsize=8)
+    plt.rc('figure', titlesize=12)
+    
+    outFile = "gf_coords_"+time.strftime("%Y%m%d")+".pdf"
+    
+    xy_df.set_index(keys='step',inplace=True)
+    steps = list(set(xy_df.index.values))
+    steps.sort()
+    #print(type(steps))
+    #print(type(steps[1]))    
+    fig, axes = plt.subplots(1,2)#,figsize=(70,50))
+    #fig.tight_layout()
+    axes[0].set_title("X coord")
+    axes[1].set_title("Y coord")
+
+    handles0 = []
+    handles1 = []
+    labels   = []
+    for step in steps:
+        labelText = "Step " + str(int(step))
+        data2plot = xy_df.xs(key=step,drop_level=True)
+        #
+        sns.kdeplot(x=data2plot.x.to_numpy(),ax=axes[0], label=labelText)
+        sns.kdeplot(x=data2plot.y.to_numpy(),ax=axes[1], label=labelText)
+
+    axes[0].legend(loc=1,fontsize='small')
+    axes[1].legend(loc=1,fontsize='small')
+    axes[1].axes.get_yaxis().get_label().set_visible(False) # removing y-axis label from right plot
+    plt.savefig(outFile)
+

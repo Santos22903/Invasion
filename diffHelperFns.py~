@@ -1,0 +1,18 @@
+def printGlobalVars():
+    # global vars from config file
+    global P_mut,Rprod0,inflx,steep,n_cycles,L,L_filled,secrete_tstep,secreteN
+    global diff_coef, delx, k_on, k_off, receptors_per_cell
+    global bind_1reaction, useMultiprocConstant, useMapConstant
+    # global vars not from config file
+    global diff_coef_scaled, diff_delt, k_on_norm
+    print("\n")
+    print("Constants from the configuration file")
+    print("P_mut,inflx,steep,n_cycles,L,L_filled in main",P_mut,inflx,steep,n_cycles,L,L_filled)
+    print("diff_coef, delx, k_on, k_off in main ", round(diff_coef,3), delx, k_on, k_off)
+    print("receptors_per_cell in main ",receptors_per_cell)
+    print("bind_1reaction ",bind_1reaction," useMultiproc ",useMultiprocConstant," useMap ",useMapConstant)
+    print("Calculated global constants")
+    print("diff_coef_scaled, diff_delt, k_on_norm in main ",
+          round(diff_coef_scaled,3), round(diff_delt,3),f'{k_on_norm:.3}')
+    print("\n")
+

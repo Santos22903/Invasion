@@ -1,0 +1,87 @@
+Configuration file used: default_cfg_paral
+
+
+Constants from the configuration file
+L, L_filled, diff_range in main:  15 15 6
+dParam, zParam in main:  3 10
+cost, inflection, steepness in main:  0.1 0.5 20
+update_type, invasion_done_perc  stochastic 0.5
+n_runs, findContrib, cores2use  4 wrap 4
+
+
+Calculated constants
+group_size  85
+
+
+cycleN  0
+cycleN  10000
+cycleN  20000
+cycleN  29953
+INVASION FAILED, no 2 left
+[[1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
+ [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
+ [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
+ [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
+ [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
+ [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
+ [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
+ [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
+ [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
+ [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
+ [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
+ [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
+ [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
+ [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
+ [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]]
+process:  ForkPoolWorker-4
+invasion_ctr  0  perishing_ctr  1
+cycleN  0
+cycleN  10000
+cycleN  20000
+cycleN  28534
+INVASION FAILED, no 2 left
+[[1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
+ [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
+ [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
+ [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
+ [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
+ [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
+ [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
+ [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
+ [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
+ [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
+ [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
+ [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
+ [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
+ [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]
+ [1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1. 1.]]
+process:  ForkPoolWorker-1
+invasion_ctr  0  perishing_ctr  1
+cycleN  0
+cycleN  10000
+cycleN  20000
+cycleN  30000
+cycleN  40000
+cycleN  50000
+cycleN  60000
+cycleN  70000
+cycleN  80000
+cycleN  90000
+process:  ForkPoolWorker-2
+invasion_ctr  0  perishing_ctr  0
+cycleN  0
+cycleN  10000
+cycleN  20000
+cycleN  30000
+cycleN  40000
+cycleN  50000
+cycleN  60000
+cycleN  70000
+cycleN  80000
+cycleN  90000
+process:  ForkPoolWorker-3
+invasion_ctr  0  perishing_ctr  0
+Time of all runs:  170.77815917797852
+resarray
+[(0, 1), (0, 0), (0, 0), (0, 1)]
+invasion_ctr  0  perishing_ctr  2
