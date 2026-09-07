@@ -4,4 +4,4 @@ either perishes or reaches 5% of the total population.
 The program accepts binding, unbinding coefficients of 
 public goods to cells k<sub>on</sub>, k<sub>off</sub>, diffusivity D, and cost of producing
 public goods by producer cells as arguments:
-<invasion_executable> --kon <k<sub>on</sub>> value --koff <k<sub>off</sub>> -D <D value> --cost <cost value>
+<invasion_executable> --kon <k<sub>on</sub>> --koff <k<sub>off</sub>> -D <D> --cost <cost>
